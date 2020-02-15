@@ -6,9 +6,3 @@ img {
   width: 20%;
   border-radius: 50%;
 }
-body {
-  background-image: url('bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
