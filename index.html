@@ -1,6 +1,19 @@
+<?php
+  $bg = array('bg.jpg', 'bg2.jpg', 'bg3.jpg', 'bg4.jpg');
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
+<style type="text/css">
+<!--
+body{
+background: url(/<?php echo $selectedBg; ?>) no-repeat;
+}
+-->
+</style>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>Juicy.exe</title>
