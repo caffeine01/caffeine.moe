@@ -20,19 +20,49 @@
  <a href="https://soundcloud.com/linuxvapour">Soundcloud</a><br>
 </div>
 <style>
- @keyframes fader{
- 0% {background: url("bg.jpg")}
- 27.5% {background: url("bg2.jpg")}
- 55% {background: url("bg3.jpg")}
- 100% {background: url("bg4.jpg")}
- }
+    <img src="bg.jpg" />
+    <img src="bg2.jpg" />
+    <img src="bg3.jpg" />
+    <img src="bg4.jpg" />
 body {
   font-family: 'Roboto';font-size: 22px;
-  background: white;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  animation: fader 60s linear infinite;
+    position: absolute;
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    &:nth-of-type(1) {
+      animation-delay: 45s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 30s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 15s;
+    }
+    &:nth-of-type(4) {
+      animation-delay: 0;
+    }
+  }
+}
+
+@keyframes multiple-image-crossfade {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 }
     h1{
 text-align: center;
