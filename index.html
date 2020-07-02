@@ -1,6 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Juicyexe" />
+<meta property="og:description" content="My personal website, look around if you want :)" />
+<meta property="og:url" content="https://www.juicyexe.ga" />
+<meta property="og:image" content="favicon.png" />
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> 
@@ -42,7 +51,6 @@ color: transparent;
 background-clip: text;
   }
 body {
-  background-image: url('https://archive-media-0.nyafuu.org/wg/image/1510/33/1510333227878.gif');
   background-size: cover;
   height: 100vh;
   padding:0;
@@ -50,5 +58,12 @@ body {
   font-family: 'Yellowtail', cursive;
 }
 </style>
+<script>
+var images = ['1510/33/1510333227878.gif', '1521/74/1521747984513.gif', '1482/26/1482264757579.gif', '1482/26/1482263325957.gif', '1472/08/1472084572720.gif', '1514/36/1514360081763.gif', '1520/62/1520629191035.gif'];
+
+$('body').css({
+  'background-image': 'url(https://archive-media-1.nyafuu.org/wg/image/' + images[Math.floor(Math.random() * images.length)] + ')'
+});
+</script>
 </body>
 </html>
