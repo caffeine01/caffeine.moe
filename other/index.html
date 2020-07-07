@@ -6,11 +6,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-    <a href="https://duckduckgo.com">DuckDuckGo</a>
-    <a href="https://wiki.archlinux.org">Arch Wiki</a>
-    <a href="https://www.colorhexa.com/">Colour Picker</a>
-    <a href="https://uigradients.com/">CSS Gradients</a>
+        <ul>
+            <li><a class="active" href="#">Local</a></li>
+            <li><a href="./external.html">External</li>
+        </ul>
         <style>
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ebdbb2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Terminus (TTF)";
+  font-size: 19px;
+}
+
+li a:hover {
+  background-color: #111;
+}
               @font-face { 
 	          font-family: "Terminus (TTF)"; 
 	          src: url('TerminusTTF-4.47.0.ttf'); 
