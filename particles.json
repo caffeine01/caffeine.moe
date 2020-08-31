@@ -53,6 +53,9 @@
         "rotateX": 600,
         "rotateY": 1200
       }
+    },
+    "onclick": {
+        "enable": false
+        }
     }
-  }
 }
