@@ -7,34 +7,16 @@
 <meta property="og:url" content="https://www.juicyexe.ga" />
 <meta property="og:image" content="favicon.png" />
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="particles.js"></script>
 <title>Juicyexe's Homepage</title>
 <link rel="icon" href="favicon.gif" type="image/gif">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <div class="body-particles">
-      <div id="body"></div>
-  </div> 
-  <script>
-   particlesJS.load('body-particles','particles.json');  
-  </script>
+  <div id="particles-js"></div>
+
+<script src="particles.js"></script>
+<script>particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('callback - particles.js config loaded');</script>
 <style>
-  #body{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: #FFFFFF;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.body-particles{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
 </style>
 </body>
 </html>
