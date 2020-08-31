@@ -11,14 +11,21 @@
 <link rel="icon" href="favicon.gif" type="image/gif">
 </head>
 <body>
-  <div id="particles-js"></div>
-
+<div id="particles-js"></div>
 <script src="particles.js"></script>
 <script>
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('callback - particles.js config loaded')});
   </script>
 <style>
+  #particles-js{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+  }
 </style>
 </body>
 </html>
