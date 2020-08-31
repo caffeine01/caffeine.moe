@@ -7,13 +7,17 @@
 <meta property="og:url" content="https://www.juicyexe.ga" />
 <meta property="og:image" content="favicon.png" />
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="particles.js"></script>
 <title>Juicyexe's Homepage</title>
 <link rel="icon" href="favicon.gif" type="image/gif">
 </head>
 <body>
-  <div id="particles-js"></div>
-  <script src="particles.js"></script>
-
+  <div id="wrapper">
+      <div id="particle-div"></div>
+  </div> 
+  <script>
+   particlesJS.load('particle-div','particles.json');  
+  </script>
 <style>
   body{
     background-color: #282828;
