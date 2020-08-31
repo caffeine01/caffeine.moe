@@ -11,7 +11,16 @@
 <link rel="icon" href="favicon.gif" type="image/gif">
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <p><span> | </span>start</p>
+  <nav>
+      <ul>
+          <li><a href="https://sites.google.com/a/eng.ucsd.edu/cse20-summer-2020/">cse20</a></li>
+          <li><a href="https://piazza.com/">piazza</a></li>
+          <li><a href="https://www.reddit.com/r/unixporn/">r/unixporn</a></li>
+          <li><a href="https://github.com/">github</a></li>
+      </ul>
+  </nav>
+  <p><span> | </span> rice nom nom <span id="cursor">_</span></p>   
 <div id="particles-js"></div>
 <script src="particles.js"></script>
 <script>
@@ -38,9 +47,6 @@ particlesJS.load('particles-js', 'particles.json', function() {
     min-width: 30px;
     padding: 3em;
   }
-  h1{
-    text-align: center;
-  }
   #particles-js{
     width: 100%;
     height: 100%;
@@ -49,6 +55,49 @@ particlesJS.load('particles-js', 'particles.json', function() {
     top: 0;
     left: 0
   }
+  p {
+    margin: 0;
+}
+
+p span {
+    color: #9ce5c0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    column-gap: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1em 0;
+}
+
+
+p #cursor {
+    background-color: #9ce5c0;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
 </style>
 </body>
 </html>
