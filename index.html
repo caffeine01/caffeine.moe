@@ -12,22 +12,35 @@
 <link rel="icon" href="favicon.gif" type="image/gif">
 </head>
 <body>
-  <div id="wrapper">
-      <div id="particle-div"></div>
+  <div class="body-particles">
+    <div id="wrapper">
+
+    </div>
+      <div id="particles-js"></div>
   </div> 
   <script>
-   particlesJS.load('particle-div','particles.json');  
+   particlesJS.load('particles-js','particles.json');  
   </script>
 <style>
   body{
     background-color: #FFFFFF;
   }
-  .wrapper{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
+  #particles-js{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.body-particles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
 </style>
 </body>
 </html>
