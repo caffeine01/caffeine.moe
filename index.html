@@ -44,9 +44,10 @@ particlesJS.load('particles-js', 'particles.json', function() {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 30px;
     min-height: 15ch;
     padding: 3em;
-    animation: cut 2s;
+    animation: fade 2s ;
     overflow: hidden;
     white-space: nowrap;
   }
@@ -94,13 +95,9 @@ p #cursor {
     animation: blink 1s infinite;
 }
 
-@keyframes cut {
-  from{
-    width: 0px;
-  }
-  to{
-    width: auto;
-  }
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes blink {
