@@ -81,6 +81,10 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: linearwipe 6s steps(60, end); 
 }
 
 nav {
@@ -99,6 +103,10 @@ p #cursor {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+@keyframes linearwipe{ 
+  from { width: 0; } 
+}  
 
 @keyframes blink {
     0% { opacity: 0; }
