@@ -56,6 +56,7 @@ body {
     border: var(--border_width) solid var(--bg);
     transition: .2s;
     font-size: 32px;
+    width: 25vw;
 }
 
 .card:hover {
@@ -85,6 +86,7 @@ ul {
 
 span #cursor {
     animation: blink 1s infinite;
+    padding-left: 2px;
 }
 
 
