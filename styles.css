@@ -1,0 +1,107 @@
+:root {
+    --bg: #171a1f;
+    --fg: #20242a;
+    --sel: #fff;
+
+    --border_radius: 2px;
+    --border_width: 3px;
+    --box_shadow: 10px 10px 30px rgb(0, 0, 0, 0.45);
+    --box_shadow-hover: 25px 25px 30px rgb(0, 0, 0, 0.45);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    animation: fade 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--bg);
+}
+
+.cards {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    color: var(--sel);
+    border-radius: var(--border_radius);
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    box-shadow: none;
+    padding: 2em;
+    box-shadow: var(--box_shadow);
+    border: var(--border_width) solid var(--bg);
+    transition: .2s;
+    font-size: 32px;
+}
+
+.card:hover {
+    border: var(--border_width) solid var(--fg);
+    box-shadow: var(--box_shadow-hover);
+}
+
+.card a {
+    color: inherit;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.card a:hover {
+    padding-left: 20px;
+}
+
+.card span {
+    margin-top: 35px;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+span #cursor {
+    animation: blink 1s infinite;
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

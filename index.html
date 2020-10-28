@@ -1,103 +1,36 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:title" content="Juicyexe" />
-<meta property="og:description" content="My personal website, look around if you want :D" />
-<meta property="og:url" content="https://www.juicyexe.ga" />
-<meta property="og:image" content="favicon.png" />
-<title>Juicyexe's Homepage</title>
-<link rel="icon" href="favicon.gif" type="image/gif">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Juicyexe" />
+    <meta property="og:description" content="My personal website, look around if you want :D" />
+    <meta property="og:url" content="https://www.juicehq.xyz" />
+    <meta property="og:image" content="favicon.png" />
+    <title>Juicyexe's Homepage</title>
+    <link rel="icon" href="favicon.gif" type="image/gif">
+    <link href="./styles.css" rel="stylesheet">
 </head>
+
 <body>
-<div class="uwu">
-  <nav>
-      <ul>
-          <li><a href="https://www.youtube.com/channel/UCK9MOt51GLgCwLm0fcHJ_EA?">youtube</a></li>
-          <li><a href="https://www.twitch.tv/itsyaboijuicyboi">twitch</a></li>
-          <li><a href="https://github.com/juicyexe">github</a></li>
-          <li><a href="https://www.juicehq.xyz/other">other places</a></li>
-      </ul> 
-  </nav> 
-  <p><span> > </span>welcome <span id="cursor">_</span></p>
-<style>
-  html{
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    animation: fade 2s ;
-    font-family: 'Roboto', sans-serif; 
-    background-color: #171a1f;
-  }
-  .uwu {
-    box-shadow: 9px 9px 4px rgb(0, 0, 0, 0.45);
-    border-radius: 3px;
-    color: #FFF;
-    background-color: #20242a;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 30px;
-    min-height: 15ch;
-    padding: 3em;
-  }
-  #particles-js{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -10;
-    top: 0;
-    left: 0
-  }
-  p {
-    margin: 0;
-}
 
-p span {
-    color: #FFF;
-}
+    <div class="cards">
+        <div class="card">
+            <a href="https://www.youtube.com/channel/UCK9MOt51GLgCwLm0fcHJ_EA?">Youtube</a>
+            <a href="https://www.twitch.tv/itsyaboijuicyboi">Twitch</a>
+            <a href="https://github.com/juicyexe">Github</a>
+            <span> > welcome <span id="cursor">_</span></span>
+        </div>
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:focus,
-a:hover {
-    font-weight: bold;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    column-gap: 2em;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 1em 0;
-}
+        <div class="card">
+            <a href="https://www.youtube.com/channel/UCK9MOt51GLgCwLm0fcHJ_EA?">Youtube</a>
+            <a href="https://www.twitch.tv/itsyaboijuicyboi">Twitch</a>
+            <a href="https://github.com/juicyexe">Github</a>
+            <span> > welcome <span id="cursor">_</span></span>
+        </div>
+    </div>
 
 
-p #cursor {
-    animation: blink 1s infinite;
-    font-family: 'Roboto', sans-serif;
-}
-@keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes blink {
-    0% { opacity: 0; }
-    49% { opacity: 0; }
-    50% { opacity: 1; }
-}
-
-</style>
 </body>
+
 </html>
