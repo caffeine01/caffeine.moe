@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+:root {
+
+    --bg: #171a1f;
+
+    --fg: #20242a;
+
+    --sel: #fff
+
+}
+
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Roboto;
+
+    font-size: inherit
+
+}
+
+
+
+body {
+
+    background: url('../med/wall.jpg') no-repeat center fixed;
+
+    background-size: cover;
+
+    color: var(--sel)
+
+}
+
+
+
+.nav {
+
+    box-shadow: 0 0 30px rgb(0,0,0,.45);
+
+    padding: 14px 0;
+
+    text-align: center;
+
+    margin: 0 auto
+
+}
+
+
+
+h1 {
+
+    font-size: xxx-large
+
+}
+
+
+
+.head {
+
+    text-align: center;
+
+    margin-top: 30px
+
+}
+
+
+
+a {
+
+    color: var(--sel)
+
+}
+
+
+
+a:hover {
+
+    color: var(--fg)
+
+}
+
+
+
+.content {
+
+    width: 65vh;
+
+    height: auto;
+
+    position: absolute;
+
+    left: 50vw;
+
+    top: 30vh;
+
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+
+}
+
+
+
+.name {
+
+    width:65vh; 
+
+    height: auto;
+
+    position: relative;
+
+}
+
+
+
+.slogan {
+
+    width:65vh;
+
+    height: auto;
+
+    position: relative;
+
+}
+
+
+
+
+
+.btn {
+
+    position: absolute;
+
+    text-align: center;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, 50%);
+
+}
+
+
+
+.divide {
+
+    padding: 0;
+
+    margin: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    animation: gradient 4s linear infinite;
+
+    animation-direction: alternate;
+
+    margin-bottom: 10px;
+
+    position: absolute;
+
+    height: 4px;
+
+    border-bottom: 0 solid #000;
+
+    background: linear-gradient(95deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);
+
+    background-size: 600% 50%
+
+}
+
+
+
+@keyframes gradient {
+
+    0% {
+
+        background-position: 0%
+
+    }
+
+
+
+    100% {
+
+        background-position: 100%
+
+    }
+
+}

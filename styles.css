@@ -1,116 +1,74 @@
 :root {
-    --bg: #171a1f;
-    --fg: #20242a;
-    --sel: #fff;
+ --bg: #171a1f;
+ --fg: #20242a;
+ --sel: #fff
 
-    --border_radius: 2px;
-    --border_width: 3px;
-    --box_shadow: 10px 10px 30px rgb(0, 0, 0, 0.45);
-    --box_shadow-hover: 25px 25px 30px rgb(0, 0, 0, 0.45);
 }
-
-@font-face {
-    font-family: Roboto;
-    src: url(./fonts/Roboto-Medium.ttf);
-}
-
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Roboto;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+ margin:0;
+ padding:0;
+ font-family:Roboto;
+ font-size:inherit
 }
-
 body {
-    animation: fade 2s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: var(--bg);
+ background: var(--bg);
+ color:var(--sel);
+ width: 100%;
+ height: 100vh;
+}
+.nav {
+ background-color:var(--bg);
+ box-shadow:0 0 30px rgb(0,0,0,.45);
+ padding:14px 0;
+ text-align:center;
+ margin:0 auto
+}
+h1 {
+ font-size:xxx-large
+}
+.head {
+ text-align:center;
+ margin-top:30px
+}
+a {
+ color:var(--sel)
+}
+a:hover {
+ color:var(--fg)
+}
+.about {
+ margin:30px;
+ width:980px;
+ max-width:90%;
+ justify-content:space-evenly
+}
+.content {
+ width:980px;
+ max-width:90%;
+ margin:5% auto;
+}
+.divide {
+ padding:0;
+ margin:0;
+ width:100%;
+ height:100%;
+ animation:gradient 4s linear infinite;
+ animation-direction:alternate;
+ margin-bottom:10px;
+ position:absolute;
+ height:3px;
+ border-bottom:0 solid #000;
+ background:linear-gradient(95deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);
+ background-size:600% 50%
+}
+@keyframes gradient {
+ 0% {
+  background-position:0%
+ }
+ 100% {
+  background-position:100%
+ }
 }
 
-.cards {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
-.card {
-    color: var(--sel);
-    border-radius: var(--border_radius);
-    display: flex;
-    flex-direction: column;
-    background: var(--bg);
-    box-shadow: none;
-    padding: 2em;
-    box-shadow: var(--box_shadow);
-    border: var(--border_width) solid var(--bg);
-    transition: .2s;
-    font-size: 32px;
-    width: 25vw;
-}
-
-.card:hover {
-    border: var(--border_width) solid var(--fg);
-    box-shadow: var(--box_shadow-hover);
-}
-
-.card a {
-    color: inherit;
-    text-decoration: none;
-    transition: .2s;
-}
-
-.card a:hover {
-    padding-left: 20px;
-}
-
-.card span {
-    margin-top: 35px;
-}
-
-
-
-ul {
-    list-style-type: none;
-}
-
-span #cursor {
-    animation: blink 1s infinite;
-    padding-left: 2px;
-}
-
-
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-
-    49% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-}

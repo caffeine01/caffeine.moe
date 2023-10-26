@@ -1,0 +1,36 @@
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta property="og:title" content="CHAOS" />
+      <meta property="og:description" content="Like a utility knife for Discord." />
+      <meta property="og:url" content="https://www.caffeine.moe/CHAOS/" />
+      <title>CHAOS</title>
+      <link href="./assets/css/styles.css" rel="stylesheet" />
+      <script type="text/javascript">
+         document.getElementById("bgm").volume = 0.5;
+      </script>
+   </head>
+   <body>
+      <div class="divide"></div>
+      <div id="top">
+         <div class="nav">
+            <a class="active" href="../index.html">Home</a>
+            <a href="https://github.com/caffeine-moe/CHAOS/releases/tag/v3.0.0-beta.2">Download</a>
+            <a href="https://caffeine.moe/CHAOS/commands/">Commands</a>
+            <a href="https://github.com/caffeine-moe/CHAOS/">Source</a>
+         </div>
+      </div>
+      <div id="main">
+         <div class="content">
+            <img class="name" src="./assets/med/name.png">
+            <img class="slogan" src="./assets/med/slogan.png">
+         </div>
+         <div class="btn">
+            <a onclick="if (!window.__cfRLUnblockHandlers) return false; if (!window.__cfRLUnblockHandlers) return false; bgm.paused?bgm.play():bgm.pause()">toggle music</a>
+         </div>
+      </div>
+      <audio id="bgm" autoplay="" loop="">
+         <source src="./assets/med/uwa.mp3" type="audio/mpeg" />
+      </audio>
+   </body>
+</html>
