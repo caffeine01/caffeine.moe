@@ -1,19 +1,19 @@
 :root {
- --bg: #171a1f;
- --fg: #20242a;
- --sel: #fff
+ --bg: #282828;
+ --fg: #ebdbb2;
+ --sel: #fbf1c7
 
 }
-@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 * {
  margin:0;
  padding:0;
- font-family:Roboto;
+ font-family: "Fira Code", serif;
  font-size:inherit
 }
 body {
  background: var(--bg);
- color:var(--sel);
+ color:var(--fg);
  width: 100%;
  height: 100vh;
 }
@@ -32,10 +32,10 @@ h1 {
  margin-top:30px
 }
 a {
- color:var(--sel)
+ color:var(--fg)
 }
 a:hover {
- color:var(--fg)
+ color:var(--sel)
 }
 .about {
  margin:30px;
@@ -59,7 +59,7 @@ a:hover {
  position:absolute;
  height:3px;
  border-bottom:0 solid #000;
- background:linear-gradient(95deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);
+ background:linear-gradient(95deg,#fe8019,#d3869b,#83a598,#8ec07c,#fabd2f,#fb4934);
  background-size:600% 50%
 }
 @keyframes gradient {
@@ -70,5 +70,3 @@ a:hover {
   background-position:100%
  }
 }
-
-
